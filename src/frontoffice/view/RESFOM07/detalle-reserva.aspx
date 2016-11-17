@@ -107,46 +107,37 @@
         <div class="col-xs-10 col-xs-offset-1">
             <h3 class="color-gris-oscuro">Datos de Reserva</h3>
             <hr />
-            <form class="validate" action="#" method="post" enctype="multipart/form-data" data-success="Sent! Thank you!" data-toastr-position="top-right">
-                <fieldset>
-                    <!-- required [php action request] -->
-                    <input type="hidden" name="action" value="contact_send" />
-                    <div class="row">
-                        <div class="form-group">
-                            <div class="col-md-12 col-sm-12">
-                                <label>Preferecia de Ubicación*</label>
-                                <select name="contact[position]" class="form-control pointer required">
-                                    <option value="0">Cualquiera</option>
-                                    <option value="1">Piso más bajo</option>
-                                    <option value="2">Piso más alto</option>
-                                </select>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12 col-sm-12">
+                        <label>Preferecia de Ubicación*</label>                        
+                        <p>Cualquiera</p>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-6 col-sm-6">
+                        <label>Fecha de Llegada *</label>
+                        <p>2016-11-17</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <label>Fecha de Desalojo *</label>
+                        <p>2016-11-17</p>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="row">
-                        <div class="form-group">
-                            <div class="col-md-6 col-sm-6">
-                                <label>Fecha de Llegada *</label>
-                                <input type="text" name="contact[start_date]" value="" class="form-control datepicker required" data-format="yyyy-mm-dd" data-lang="en" data-rtl="false">
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <label>Fecha de Desalojo *</label>
-                                <input type="text" name="contact[end_date]" value="" class="form-control datepicker required" data-format="yyyy-mm-dd" data-lang="en" data-rtl="false">
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12 col-sm-12">
+                        <label>Comentarios</label>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus sem non nisl convallis, quis porttitor risus congue. Donec semper eget purus eget congue. Nulla feugiat, purus nec tempor luctus, mi nisl condimentum ipsum, quis finibus urna orci nec risus. Maecenas sed justo finibus, posuere nibh vel, eleifend nulla. Aenean dapibus blandit rutrum. Nunc laoreet eros justo, nec egestas erat imperdiet id. Nullam in quam porttitor urna volutpat finibus et vitae magna. Curabitur interdum nisl non suscipit faucibus. Proin vulputate, augue non scelerisque feugiat, urna tellus pharetra nisl, a pharetra nulla arcu sed magna. Vivamus molestie augue in lobortis venenatis. Sed ut nulla sit amet mi ultrices varius. Aliquam nec vehicula erat. Vivamus consectetur ante ipsum, a tincidunt magna porttitor et.
+                        </p>
                     </div>
-
-                    <div class="row">
-                        <div class="form-group">
-                            <div class="col-md-12 col-sm-12">
-                                <label>Comentarios</label>
-                                <textarea name="contact[experience]" rows="4" class="form-control required"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>
