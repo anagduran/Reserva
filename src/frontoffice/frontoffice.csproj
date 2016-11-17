@@ -1458,6 +1458,7 @@
     <Content Include="view\assets\plugins\slider.swiper\dist\js\maps\swiper.min.js.map" />
     <Content Include="view\assets\plugins\styleswitcher\color_schemes\color_scheme.fla" />
     <Content Include="view\RESFOM07\RESFOM7.Master" />
+    <None Include="Properties\PublishProfiles\SmarterASP FrontOffice.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
