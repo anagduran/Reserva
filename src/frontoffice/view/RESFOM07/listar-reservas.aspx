@@ -5,9 +5,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="row">
-        <div class="col-md-12 col-sm-12">
+        <div class="col-xs-8">
             <h2 class="color-azul">Reservas</h2>
-        </div>        
+        </div>
+        <div class="col-xs-4">
+            <a href="guardar-reserva.aspx" class="btn btn-primary pull-right">Realizar Reserva</a>            
+        </div>
     </div>
     <!-- HTML DATATABLES -->
     <table class="table table-striped table-bordered table-hover" id="sample_1">
