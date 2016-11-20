@@ -1,0 +1,24 @@
+﻿@model BOReserva.Models.gestion_ruta_comercial.CGestion_ruta
+
+@using (Html.BeginForm("guardarRuta", "gestion_ruta_comercial", null, FormMethod.Post, new { @id = "formGuardarRuta", @class = "form-horizontal" })) { 
+    
+    @Html.TextBoxFor(m => m._origenRutaAgregar, null, new { @class = "form-control", @placeholder = "Ejem.: Caracas - Venezuela", @id = "rutaOrigen"})
+    
+    <center> <button id="enviar" class="btn btn-success">Guardar</button> </center>
+    <script>
+        $("#enviar").click(function (e) {
+            e.preventDefault();
+            var form = $("#formGuardarRuta");
+            alert("Ruta guardada exitosamente");
+            $.ajax({
+                url: "gestion_ruta_comercial/guradarRuta",
+                data: form.serialize(),
+                type: 'POST',
+                success: function (data) {
+                    alert("Ruta guardada exitosamente");
+                    $('#formGuardarRuta')[0].reset();
+                }
+            });
+        });
+    </script>
+}
