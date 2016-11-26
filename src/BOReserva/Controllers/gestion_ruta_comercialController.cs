@@ -7,25 +7,19 @@ using BOReserva.Models.gestion_ruta_comercial;
 
 namespace BOReserva.Controllers
 {
-    public class gestion_ruta_comercialController : Controller
-    {
-        //
-        // GET: /gestion_ruta_comercial/
-        public ActionResult M03_GestionRutasComerciales()
-        {
-            CGestion_ruta modelo = new CGestion_ruta();
-            
-            return PartialView(modelo);
-        }
+	public class gestion_ruta_comercialController : Controller
+	{
+		//
+		// GET: gestion_ruta_comercial/M03_GestionRutasComerciales
+		public PartialViewResult M03_GestionRutasComerciales()
+		{
+			CGestion_ruta ruta = new CGestion_ruta();
+			return PartialView(ruta);
+		}
 
-        //
-        //POST:
-        [HttpPost]
-        public JsonResult guardarRuta(CGestion_ruta modelo)
-        {
-            String origen = modelo._origenRutaAgregar;
-            return (Json(true, JsonRequestBehavior.AllowGet));
-        }
+		
+
+
 	}   
-        
+		
 }

@@ -7,15 +7,15 @@ namespace BOReserva.Models.gestion_ruta_comercial
 {
     public class CGestion_ruta
     {
-        public String _origenRutaAgregar { get ; set; }
+        public int _idRuta { get; set; }
+        
+        public String _origenRuta { get ; set; }
 
-        public String _destinoRutaAgregar { get; set; }
+        public String _destinoRuta { get; set; }
 
-        public String _matriculaAvionAgregar { get; set; }
+        public String _tipoRuta { get; set; }
 
-        public String _tipoRutaAgregar { get; set; }
-
-        public int _distanciaRutaAgregar { get; set; }
+        public int _distanciaRuta { get; set; }
 
     }
 }

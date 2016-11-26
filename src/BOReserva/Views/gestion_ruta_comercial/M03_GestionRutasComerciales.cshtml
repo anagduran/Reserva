@@ -1,15 +1,67 @@
 ﻿@model BOReserva.Models.gestion_ruta_comercial.CGestion_ruta
 
+@{
+    List<SelectListItem> listItems = new List<SelectListItem>();
+    List<SelectListItem> listTipo = new List<SelectListItem>();
+    
+    
+    listItems.Add(new SelectListItem
+      {
+          Text = "Caracas - Venezuela",
+          Value = "Caracas"
+      });
+    listItems.Add(new SelectListItem
+     {
+         Text = "Ciudad de Panamá -  Panamá",
+         Value = "Ciudad de Panamá",
+     });
+    listItems.Add(new SelectListItem
+     {
+         Text = "Madrid - España",
+         Value = "Madrid"
+     });
+
+    
+    listTipo.Add(new SelectListItem
+      {
+          Text = "Aérea",
+          Value = "aerea"
+      });
+    listTipo.Add(new SelectListItem
+     {
+         Text = "Marítima",
+         Value = "maritima",
+         
+     });
+     
+}
+
 @using (Html.BeginForm("guardarRuta", "gestion_ruta_comercial", null, FormMethod.Post, new { @id = "formGuardarRuta", @class = "form-horizontal" })) { 
     
-    @Html.TextBoxFor(m => m._origenRutaAgregar, null, new { @class = "form-control", @placeholder = "Ejem.: Caracas - Venezuela", @id = "rutaOrigen"})
+    <label>Elegir Tipo de la Ruta (*)</label>
+    @Html.DropDownList("rutaTipo", listTipo, new { @class = "form-control", @placeholder = "Aérea", @id = "rutaTipo" })    
+    <br />
+    <label>Elegir Origen de la Ruta (*)</label>
+    @Html.DropDownList("rutaOrigen", listItems, new { @class = "form-control", @placeholder = "Ejem.: Caracas - Venezuela", @id = "rutaOrigen"})    
+    <br />
+    <label>Elegir Destino de la Ruta (*)</label>
+    @Html.DropDownList("rutaDestino", listItems, new { @class = "form-control", @placeholder = "Ejem.: Caracas - Venezuela", @id = "rutaDestino"})
+    <br />
+    <label>Agregar distancia de la Ruta (*)</label>
+    @Html.TextBoxFor(m => m._distanciaRuta, null , new { @class = "form-control", @placeholder = "1200 KM", @id = "rutaDistancia"})
+    <br />    
+    <center><button id="enviar" class="btn btn-success">Guardar</button></center>
+        
     
-    <center> <button id="enviar" class="btn btn-success">Guardar</button> </center>
+    
+    
     <script>
         $("#enviar").click(function (e) {
             e.preventDefault();
             var form = $("#formGuardarRuta");
-            alert("Ruta guardada exitosamente");
+            var origen = $('#rutaOrigen').get;
+            var destino = $('#rutaDestino').val;
+            alert("Ruta origen: "+origen+" Ruta Destino: "+destino);
             $.ajax({
                 url: "gestion_ruta_comercial/guradarRuta",
                 data: form.serialize(),
