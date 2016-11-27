@@ -382,6 +382,7 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="Scripts\rutasJS.js" />
     <Content Include="Views\dist\css\AdminLTE.css" />
     <Content Include="Views\dist\css\AdminLTE.min.css" />
     <Content Include="Views\dist\css\skins\skin-black-light.css" />
@@ -1334,7 +1335,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\gestion_ruta_comercial\M03_GestionRutasComerciales.cshtml" />
+    <Content Include="Views\gestion_ruta_comercial\AgregarRutasComerciales.cshtml" />
+    <Content Include="Views\gestion_ruta_comercial\ModificarRutasComerciales.cshtml" />
+    <Content Include="Views\gestion_ruta_comercial\VisualizarRutasComerciales.cshtml" />
+    <Content Include="Views\gestion_ruta_comercial\DetalleRutasComerciales.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
