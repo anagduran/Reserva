@@ -1,0 +1,124 @@
+﻿@model BOReserva.Models.gestion_vuelo.CGestion_Vuelo
+
+@using (Html.BeginForm("guardarVuelo", "gestion_vuelo", null, FormMethod.Post, new { @id = "formGuardarVuelo" }))
+{
+    <!-- Main content -->
+    <!-- =============================================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <h1>
+                    Gestion de vuelos
+                    <small>Crear un vuelo</small>
+                </h1>
+                <small>Complete el formulario para la creacion de un nuevo vuelo</small>
+            </div>
+            <div class="col-md-6">
+                <div class="box box-solid">
+                    <div class="box-body ">
+                        <!-- CODIGO DE VUELO -->
+                        <div class="form-group">
+                            <label for="exampleCodVuelo1">Codigo de vuelo (<span style="color: #d9534f">*</span>):</label>
+                            <input type="text" class="form-control" id="_codigoVuelo" placeholder="Ej: AA 2254">
+                        </div>
+                        <!-- FIN CODIGO DE VUELO -->
+                        <!-- CIUDAD ORIGEN -->
+                        <div class="form-group">
+                            <label> Ciudad Origen (<span style="color: #d9534f">*</span>):</label>
+                            <select class="form-control select2" style="width: 100%;" id="_ciudadOrigen">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                        <!-- FIN CIUDAD ORIGEN -->
+                        <!-- FECHA DESPEGUE  -->
+                        <div class="form-group">
+                            <label> Fecha Despegue (<span style="color: #d9534f">*</span>):</label>
+                            @Html.TextBoxFor(m => m._fechaDespegue, null, new { @class = "datepicker", @type = "date", @id = "fechadespegue", @style = "width: 100%;" })
+                        </div>
+                        <!-- FIN FECHA DESPEGUE -->
+                        <!-- HORA DESPEGUE  -->
+                        <div class="form-group">
+                            <label> Hora Despegue (<span style="color: #d9534f">*</span>):</label>
+                            @Html.TextBoxFor(m => m._horaDespegue, null, new { @class = "datepicker", @type = "time", @id = "horadespegue", @style = "width: 100%;" })
+                        </div>
+                        <!-- FIN HORA DESPEGUE -->
+                        <!-- ELEGIR AVION -->
+                        <div class="form-group">
+                            <label> Elegir avion (<span style="color: #d9534f">*</span>):</label>
+                            <select class="form-control select2" disabled="disabled" style="width: 100%;" id="_matriculaAvion">
+                                <option selected="selected">Debe completar los campos previos</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Capacidad de pasajeros del avion:</label>
+                            <input type="text" class="form-control" id="_pasajerosAvion" disabled="disabled">
+                        </div>
+                        <div class="form-group">
+                            <label>Distancia maxima:</label>
+                            <input type="text" class="form-control" id="_distanciaMaxima" disabled="disabled">
+                        </div>
+                        <!-- FIN ELEGIR AVION -->
+                        <!-- CIUDAD DESTINO  -->
+                        <div class="form-group">
+                            <label>Destino (<span style="color: #d9534f">*</span>):</label>
+                            <select class="form-control select2" disabled="disabled" style="width: 100%;" id="_ciudadDestino">
+                                <option selected="selected">Debe seleccionar un origen</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                        <!-- FIN CIUDAD DESTINO  -->
+                        <!-- FECHA ATERRIZAJE  -->
+                        <div class="form-group">
+                            <label> Fecha Aterrizaje (<span style="color: #d9534f">*</span>):</label>
+                            @Html.TextBoxFor(m => m._fechaAterrizaje, null, new { @class = "datepicker", @type = "date", @id = "fechaaterrizaje", @style = "width: 100%;" })
+                        </div>
+                        <!-- FIN FECHA ATERRIZAJE  -->
+                        <!-- HORA ATERRIZAJE  -->
+                        <div class="form-group">
+                            <label> Hora Aterrizaje (<span style="color: #d9534f">*</span>):</label>
+                            @Html.TextBoxFor(m => m._horaAterrizaje, null, new { @class = "datepicker", @type = "time", @id = "horaaterrizaje", @style = "width: 100%;" })
+                        </div>
+                        <!--  FIN HORA ATERRIZAJE  -->
+
+
+
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success center-block" id="agregarVuelo">Agregar</button>
+            </div>
+        </div>
+    </div>
+            <script>
+                $("#agregarVuelo").click(function (e) {
+                    e.preventDefault();
+                    var form = $("#formGuardarVuelo");
+                    $.ajax({
+                        url: "gestion_vuelo/guardarVuelo",
+                        data: form.serialize(),
+                        type: 'POST',
+                        success: function (data) {
+                            alert("Se guardo");
+                            $('formGuardarVuelo')[0].reset();
+                        }
+                    });
+                });
+            </script>
+
+}
