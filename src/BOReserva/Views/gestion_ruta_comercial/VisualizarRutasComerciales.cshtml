@@ -29,7 +29,7 @@
             <td>
                 <a href="#"><i class="fa fa-check"></i></a>
                 <a href="#"><i class="fa fa-times"></i></a>
-                <a href="#"><i class="fa fa-eye"></i></a>
+                <a href="#"><i class="fa fa-eye" id="m03DetalleRutas"></i></a>
                 <a href="#"><i class="fa fa-gear" id="m03EditarRutas"></i></a>
             </td>
         </tr>        
@@ -64,5 +64,22 @@
         });
     });  
 
+
+    $("#m03DetalleRutas").click(function (e) {
+        e.preventDefault();
+        alert("Botón Editar");
+        $.ajax({
+            url: '/gestion_ruta_comercial/DetalleRutasComerciales',
+            data: '',
+            type: 'GET',
+            success: function (data) {
+                $("#contenido").empty();
+                $("#contenido").append(data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(errorThrown);
+            }
+        });
+    });
 
 </script>

@@ -31,8 +31,14 @@ namespace BOReserva.Controllers
 		{
 			CGestion_ruta ruta = new CGestion_ruta();
 			return PartialView(ruta);
-		}	
+		}
 
+		// GET: gestion_ruta_comercial/VisualizarRutasComerciales
+		public PartialViewResult DetalleRutasComerciales()
+		{
+			CGestion_ruta ruta = new CGestion_ruta();
+			return PartialView(ruta);
+		}	
 
 	}   
 		
