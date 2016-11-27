@@ -16,81 +16,70 @@
             <div class="col-md-6">
                 <div class="box box-solid">
                     <div class="box-body ">
-                        <!-- CODIGO DE VUELO -->
+                        <!-- TEXTBOX CODIGO DE VUELO -->
                         <div class="form-group">
                             <label for="exampleCodVuelo1">Codigo de vuelo (<span style="color: #d9534f">*</span>):</label>
-                            <input type="text" class="form-control" id="_codigoVuelo" placeholder="Ej: AA 2254">
+                           @Html.TextBoxFor(m => m._codigoVuelo, null, new { @class = "form-control", @placeholder = "Ej: AA 2254", @id = "codigoVuelo" })
                         </div>
                         <!-- FIN CODIGO DE VUELO -->
-                        <!-- CIUDAD ORIGEN -->
+                        <!-- DROPDOWN CIUDAD ORIGEN -->
                         <div class="form-group">
                             <label> Ciudad Origen (<span style="color: #d9534f">*</span>):</label>
-                            <select class="form-control select2" style="width: 100%;" id="_ciudadOrigen">
-                                <option selected="selected">Alabama</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                            </select>
+                            @Html.DropDownListFor(m => m._ciudadOrigen, new SelectList(Model._ciudadesOrigen, "Value", "Text"), "Seleccione una ciudad origen", new {@style = "width: 100%;"})
                         </div>
                         <!-- FIN CIUDAD ORIGEN -->
-                        <!-- FECHA DESPEGUE  -->
+                        <!-- DATE FECHA DESPEGUE  -->
                         <div class="form-group">
                             <label> Fecha Despegue (<span style="color: #d9534f">*</span>):</label>
                             @Html.TextBoxFor(m => m._fechaDespegue, null, new { @class = "datepicker", @type = "date", @id = "fechadespegue", @style = "width: 100%;" })
                         </div>
                         <!-- FIN FECHA DESPEGUE -->
-                        <!-- HORA DESPEGUE  -->
+                        <!-- TIME HORA DESPEGUE  -->
                         <div class="form-group">
                             <label> Hora Despegue (<span style="color: #d9534f">*</span>):</label>
                             @Html.TextBoxFor(m => m._horaDespegue, null, new { @class = "datepicker", @type = "time", @id = "horadespegue", @style = "width: 100%;" })
                         </div>
                         <!-- FIN HORA DESPEGUE -->
-                        <!-- ELEGIR AVION -->
+                        <!-- DROPDOWN ELEGIR MATRICULA AVION -->
                         <div class="form-group">
                             <label> Elegir avion (<span style="color: #d9534f">*</span>):</label>
-                            <select class="form-control select2" disabled="disabled" style="width: 100%;" id="_matriculaAvion">
-                                <option selected="selected">Debe completar los campos previos</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                            </select>
+                            @Html.DropDownListFor(m => m._matriculaAvion, new SelectList(Model._matriculasAvion, "Value", "Text"), 
+                            "Seleccione un avion", new { 
+                           @style = "width: 100%;", @disabled="disabled"})
                         </div>
+                        <!-- FIN ELEGIR MATRICULA AVION -->
+                        <!-- TEXTBOXFOR MODELO AVION -->
+                        <div class="form-group">
+                            <label> Modelo avion (<span style="color: #d9534f">*</span>):</label>
+                            @Html.TextBoxFor(m => m._modeloAvion, null, new { @class = "form-control", @placeholder = "Ej: B777", @id = "modeloAvion", @disabled = "disabled"})
+                        </div>
+                        <!-- FIN MODELO AVION -->
+                        <!-- TEXTBOXFOR CANTIDAD PASAJEROS -->
                         <div class="form-group">
                             <label>Capacidad de pasajeros del avion:</label>
-                            <input type="text" class="form-control" id="_pasajerosAvion" disabled="disabled">
+                            @Html.TextBoxFor(m => m._pasajerosAvion, null, new { @class = "form-control", @placeholder = "Ej: 264 Pasajeros", @id = "pasajerosAvion", @disabled = "disabled" })
                         </div>
+                        <!-- FIN CANTIDAD PASAJEROS -->
+                        <!-- TEXTBOXFOR DISTANCIA MAXIMA VUELO AVION -->
                         <div class="form-group">
                             <label>Distancia maxima:</label>
-                            <input type="text" class="form-control" id="_distanciaMaxima" disabled="disabled">
+                            @Html.TextBoxFor(m => m._distanciaMaxima, null, new { @class = "form-control", @placeholder = "Ej: 17 370 km", @id = "distanciaMaxima", @disabled = "disabled" })
                         </div>
-                        <!-- FIN ELEGIR AVION -->
-                        <!-- CIUDAD DESTINO  -->
+                        <!-- DISTANCIA MAXIMA VUELO AVION -->
+                        <!-- DROPDOWN CIUDAD DESTINO  -->
                         <div class="form-group">
                             <label>Destino (<span style="color: #d9534f">*</span>):</label>
-                            <select class="form-control select2" disabled="disabled" style="width: 100%;" id="_ciudadDestino">
-                                <option selected="selected">Debe seleccionar un origen</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                            </select>
+                            @Html.DropDownListFor(m => m._ciudadDestino, new SelectList(Model._ciudadesDestino, "Value", "Text"),
+                            "Seleccione una ciudad destino", new { @style = "width: 100%;", @selected = "Ej: Caracas", @disabled = "disabled" })
                         </div>
                         <!-- FIN CIUDAD DESTINO  -->
-                        <!-- FECHA ATERRIZAJE  -->
+                        <!-- DATE FECHA ATERRIZAJE  -->
                         <div class="form-group">
                             <label> Fecha Aterrizaje (<span style="color: #d9534f">*</span>):</label>
                             @Html.TextBoxFor(m => m._fechaAterrizaje, null, new { @class = "datepicker", @type = "date", @id = "fechaaterrizaje", @style = "width: 100%;" })
                         </div>
                         <!-- FIN FECHA ATERRIZAJE  -->
-                        <!-- HORA ATERRIZAJE  -->
+                        <!-- TIME HORA ATERRIZAJE  -->
                         <div class="form-group">
                             <label> Hora Aterrizaje (<span style="color: #d9534f">*</span>):</label>
                             @Html.TextBoxFor(m => m._horaAterrizaje, null, new { @class = "datepicker", @type = "time", @id = "horaaterrizaje", @style = "width: 100%;" })
