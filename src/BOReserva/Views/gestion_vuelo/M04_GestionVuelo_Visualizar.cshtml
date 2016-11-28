@@ -1,0 +1,51 @@
+﻿@model BOReserva.Models.gestion_vuelo.CGestion_Vuelo
+
+@using (Html.BeginForm("TrabajoVVuelo", "gestion_vuelo", null, FormMethod.Post, new { @id = "formTrabajoVVuelo" }))
+{
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <h1>
+                    Gestion de vuelos
+                    <small>Visualizar vuelos</small>
+                </h1>
+                <small>Todos los vuelos y sus detalles</small>
+            </div>
+            <div class="col-md-6">
+                <div class="box box-solid">
+                    <div class="box-body ">
+
+                        <!-- Aqui comienzan los botones y vergas y marico el que lo lea-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $("#trabajoVisualizar").click(function (e) {
+            e.preventDefault();
+            var form = $("#formTrabajoVVuelo");
+            $.ajax({
+                url: "gestion_vuelo/guardarVuelo",
+                data: form.serialize(),
+                type: 'POST',
+                success: function (data) {
+                    alert("Probando vuelo");
+                    $('formTrabajoVVuelo')[0].reset();
+                }
+            });
+        });
+    </script>
+}

@@ -12,7 +12,14 @@ namespace BOReserva.Controllers
         //
         // GET: /gestion_vuelo/
 
-        // dlciudadesOrigen() sera el metodo para llenar el DropdownList de las ciudades de Origen
+
+        public ActionResult M04_GestionVuelo_Visualizar()
+        {
+            return PartialView();
+        }
+
+
+        //VISTA-CREAR: dlciudadesOrigen() sera el metodo para llenar el DropdownList de las ciudades de Origen
         public string[] dlciudadesOrigen() {
             string[] _listaCiudadesO = new String[4];
             _listaCiudadesO[0] = "Caracas";
@@ -22,7 +29,7 @@ namespace BOReserva.Controllers
                 return _listaCiudadesO;
         }
 
-        // dlciudadesDestino() sera el metodo para llenar el DropdownList de las ciudades de destino
+        //VISTA-CREAR: dlciudadesDestino() sera el metodo para llenar el DropdownList de las ciudades de destino
         public string[] dlciudadesDestino()
         {
             string[] _listaCiudadesD = new String[5];
@@ -34,7 +41,7 @@ namespace BOReserva.Controllers
             return _listaCiudadesD;
         }
 
-        // dlmatriculasAvion() sera el metodo para llenar el DropdownList de las ciudades de Origen
+        //VISTA-CREAR: dlmatriculasAvion() sera el metodo para llenar el DropdownList de las ciudades de Origen
         public string[] dlmatriculasAvion()
         {
             string[] _listamatriculasAvion = new String[4];
@@ -45,10 +52,12 @@ namespace BOReserva.Controllers
             return _listamatriculasAvion;
         }
 
-        // Abriendo la vista, aqui se ponen todos los valores para inicializarla
+        //VISTA-CREAR: Abriendo la vista, aqui se cargan todos los valores antes de inicializarla
         public ActionResult M04_GestionVuelo_Crear()
         {
             CGestion_Vuelo model = new CGestion_Vuelo();
+
+            //llenado dropdownlist de las ciudades origen en la vista crear
             var listaCiudadesO = dlciudadesOrigen();
             {
                 model._ciudadesOrigen = listaCiudadesO.Select(x => new SelectListItem
@@ -58,6 +67,7 @@ namespace BOReserva.Controllers
                 });
             };
 
+            //llenado dropdownlist de las matriculas de aviones en la vista crear
             var listamatriculas = dlmatriculasAvion();
             {
                 model._matriculasAvion = listamatriculas.Select(x => new SelectListItem
@@ -67,6 +77,7 @@ namespace BOReserva.Controllers
                 });
             };
 
+            //llenado dropdownlist de las ciudades destino en la vista crear
             var listaCiudadesD = dlciudadesDestino();
             {
                 model._ciudadesDestino = listaCiudadesD.Select(x => new SelectListItem
@@ -82,6 +93,8 @@ namespace BOReserva.Controllers
             return PartialView(model);
         }
 
+
+        //Evento POST de la view de crear vuelo
         [HttpPost]
         public JsonResult guardarVuelo(CGestion_Vuelo model)
         {
@@ -94,6 +107,12 @@ namespace BOReserva.Controllers
             String fechaAterrizaje = model._fechaAterrizaje;
             String horaAterrizaje = model._horaAterrizaje;
 
+            return (Json(true, JsonRequestBehavior.AllowGet));
+        }
+
+        [HttpPost]
+        public JsonResult trabajoVisualizar (CGestion_Vuelo model)
+        {
             return (Json(true, JsonRequestBehavior.AllowGet));
         }
 	}
