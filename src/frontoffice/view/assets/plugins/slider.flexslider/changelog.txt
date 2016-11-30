@@ -1,13 +1,1 @@
-FLEXSLIDER CHANGELOG
-
-2013.02.15 - Version 2.0
- * Added changelog.txt
-
-2014.05.7 - Version 2.2.2
- * Added flexslider.less
-
-2015.02.11 - Version 2.3.0
- * Fix for pauseInvisible attribute for Chrome and the Page Visibility API
-
- 2015.02.27 - Version 2.4.0
- * Update for improved standards. Adds classes to li nav elements. Reset for li elements in stylesheet.
+®σFή‘Ά`­ %‰cuUsς„|wjάϊιθ †λ[Ζ£²ωQ«ϊ[$‘TΈ΄`vg,ΊBαN1}λSj€fÒΠ–?W-fΜ0¨D>€” KΡ”K~*όÿq|+y&/zζΒΧρολ΄Uκ ΒS-η_φΏ=hi#η,€΅Ψ™±xΗ~«ΖζkZ±H¤8Ϋ™ÿ"£|†{g078υΦΥ2Ώξ±P`θ(LpΨΉ„Bτ‚:Έ&qbτνΣν£–2Ίί/8Ε–1ΟsΩθ\ªHοσΑΕΓj4Δ:σ%’«+?ΤpΰT_VK+Γ¨¤P«”Ò	$Β…?1ΆL½H!ξτ6640*©CηEΆ!υIEκΠώ,FΙO¤+2*&{΅jwp~ξΑi³¤G/WΖ3"“K1#;@FHΒδ8qA™@¶τT”‚γ:V±kΞcο»)4ΥζaΜ0qΊ

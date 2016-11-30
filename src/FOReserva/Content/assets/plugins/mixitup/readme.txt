@@ -1,2 +1,2 @@
-Version: 1.5.4 Licensed plugin 
-Do not update this plugin!
+ÓxhvëqJ2ñÿëŠ±–y¦‡ÿ…·†Y=‡!
+À÷hY”’Ÿş“Á{˜eÈĞîbÿK"ŒœÁÖ«:

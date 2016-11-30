@@ -1,2 +1,1 @@
-Color Picker
-https://bgrins.github.io/spectrum/
+³¸ŸO©ìŠ+H­ßÃ	ôSÜ¥"ÞQÊY7]cÈ®J§S‰µ†+œ½T¡Ê‹‘

@@ -1,13 +1,2 @@
-ï»¿using System.Web;
-using System.Web.Mvc;
-
-namespace FOReserva
-{
-    public class FilterConfig
-    {
-        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
-        {
-            filters.Add(new HandleErrorAttribute());
-        }
-    }
-}
+L£öé1—ÑFÍtû:tIxhÄik®jÛí×˜šÖıä€]+)Şnkt¿r…šêlÊåÑ-à}ùµ}Şáh!Â¨u«»`;FÙë_˜¹fJÀjÄÁì	e"€smbxù&qÉB["ŒË'òÀ©Ò&z’A0•öM­`å¥÷m	vZ‚‹é‡GÓ]#Î£wì¼8Yı˜`uÿèÔüá/rUHÁæå*b#aQ­˜·÷ÁÀk÷›I^€§`AíZŒÂW»ë”À'İÃ(×å¤‚òd¾İÕŠEdÏ.«1
+?9¿¯8f‡C†?Üâ…­Ì£Ö=¶oÒü9E«Y1`|s.—şcñ“Mˆ˜#ºÕ

@@ -1,4 +1,1 @@
-![Version](http://img.shields.io/version/{%= version %}.png?color=green)
-[![Build Status](https://travis-ci.org/rendro/easy-pie-chart.png)](https://travis-ci.org/rendro/easy-pie-chart)
-[![Dependencies Status](https://david-dm.org/rendro/easy-pie-chart/dev-status.png)](https://david-dm.org/rendro/easy-pie-chart)
-[![Analytics](https://ga-beacon.appspot.com/UA-46840672-1/easy-pie-chart/readme)](https://github.com/igrigorik/ga-beacon)
+¡5ì±Ô¶!^|Öó¸:Ð’.D¬Bî¼±•˜b~õ5qML™#ÌB±™l&§>ÀÃÜ¢` íïLZ«h?DF¢ødìvå±„¶ …Ûfÿ!ÌU:“´çõáá×“‡v>¿Uú‘hÖ[‘·yi”˜¯$w¥÷»í¬–:¯w°w$lÚOÍE£F~	{ÚŠƒ’‚`S~ü‡Â˜éÈè‘ûë*£Ó5é¡? 0ˆ{mðâfj¯,—˜'Ê0´E‡+øÁ¿	¦´ÌÉJ”™°*ÆÆWÊÇÖL´m¿C¤ ³áSeg$QâSõ+-³Ð¦jON%¢úŠbˆ©œ·AÄÒè‚¨S%|¡çd+lêƒÀ¤LÜçŽQL®¹ àÒ†U5î„JÏCåžð19@Â-r}ðwà]sY"sN+ÉiÃãc©°»x´öÖÔ…s™v ä!ÿ¾·¨y\Ù,x’8LjîOH4È%ŒÐM·.t:èýj¹Ñ£»#™[×yð¾ÿbÕra‘ ‹H@j>î!¹÷	b3$V™yr¨¿T­ü×™a|¨•“@;)–Ž¯6¤}Ñú›‘ cÎƒ
