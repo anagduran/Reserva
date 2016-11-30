@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -182,6 +183,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\gestion_reserva_habitacionesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\gestion_vuelosController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -189,6 +191,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ReservaHabitacion\Cvista_ReservaHabitacion.cs" />
     <Compile Include="Models\Vuelos\Cvista_Vuelos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -2934,6 +2937,9 @@
     <Content Include="Views\Shared\assets\plugins\styleswitcher\color_schemes\color_scheme.fla" />
     <Content Include="Views\gestion_vuelos\gestion_vuelos.cshtml" />
     <Content Include="Views\gestion_vuelos\gestion_vuelosImagenes.cshtml" />
+    <Content Include="Views\gestion_reserva_habitaciones\mis_reservas.cshtml" />
+    <Content Include="Views\gestion_reserva_habitaciones\detalle_reserva.cshtml" />
+    <Content Include="Views\gestion_reserva_habitaciones\editar_reserva.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
