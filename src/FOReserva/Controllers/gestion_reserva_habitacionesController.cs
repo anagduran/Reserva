@@ -15,7 +15,7 @@ namespace FOReserva.Controllers
         [HttpGet]
         public ActionResult mis_reservas()
         {
-            List<Cvista_ReservaHabitacion> model = new List<Cvista_ReservaHabitacion>();
+            var model = Cvista_ReservaHabitacion.MisReservas(usu_id: 1);
             return PartialView(model);
         }
 
