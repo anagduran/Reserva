@@ -285,21 +285,9 @@
                         </ul>
                     </li>
                     <!-- MODULO DE AVIONES -->
-                    <li id="gestionAviones"><a href="#"><i class="fa fa-plane"></i>Gestion De Aviones</a></li>                   
+                    <li id="gestionAviones"><a href="#"><i class="fa fa-plane"></i>Gestion De Aviones</a></li>
+                   
                     <!-- FIN MODULO DE AVIONES -->
-                    <!-- MODULO DE RUTAS COMERCIALES-->
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-car"></i> <span>Gestión de rutas comerciales</span> <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li id="m03AgregarRuta"><a href="#"><i class="fa fa-plus-square-o"></i>Crear</a></li>
-                            <li id="m03VisualizarRutas"><a href="#"><i class="fa fa-eye"></i>Visualizar</a></li>
-                        </ul>
-                    </li>
-                    <!--FIN MODULO DE RUTAS COMERCIALES-->
                     <!-- MODULO DE BOLETOS AEREOS Y CHECK-IN -->
                     <li class="treeview">
                         <a href="#">
@@ -344,7 +332,7 @@
             </section>*@
             <!-- Main content -->
             <section class="content" id="contenido">
-                
+                @RenderBody()   
             </section>
             <!-- /.content -->
         </div>
@@ -499,8 +487,11 @@
                         <div class="form-group">
                             <label class="control-sidebar-subheading"> Delete chat history <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a> </label>
                         </div>
+                       
                         <!-- /.form-group -->
+
                     </form>
+
                 </div>
                 <!-- /.tab-pane -->
             </div>
@@ -535,7 +526,7 @@
             <div id="body">
                 @RenderSection("featured", required: false)
                 <section class="content-wrapper main-content clear-fix">
-                    @RenderBody()
+                    
                 </section>
             </div>
             <footer>

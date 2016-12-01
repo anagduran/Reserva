@@ -47,9 +47,15 @@
     
     });
 
+<<<<<<< HEAD
     $("#m03AgregarRuta").click(function (e) {
         e.preventDefault();
         var url = '/gestion_ruta_comercial/AgregarRutasComerciales';
+=======
+    $("#gestionUsuarios").click(function (e) {
+        e.preventDefault();
+        var url = '/gestion_usuarios/M12_Index';
+>>>>>>> origin/M12_Usuarios_BO
         var method = 'GET';
         var data = '';
 
@@ -67,6 +73,7 @@
                     alert(errorThrown);
                 }
             });
+<<<<<<< HEAD
     });
 
 
@@ -96,3 +103,9 @@
 
 
 });
+=======
+
+    });
+
+});
+>>>>>>> origin/M12_Usuarios_BO
