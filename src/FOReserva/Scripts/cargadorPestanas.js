@@ -2,7 +2,7 @@
 
     /* NO QUITAR ESTA CARGA INICIAL QUE ES LA QUE HARÁ QUE POR DEFAULT SALGA VENTA DE VUELOS AL INICIAR LA PAGINA*/
     $("#contenedor").empty();
-    var url = '/gestion_vuelos/gestion_vuelos';
+    var url = '/gestion_reserva_habitaciones/mis_reservas';
     var method = 'GET';
     var data = '';
 

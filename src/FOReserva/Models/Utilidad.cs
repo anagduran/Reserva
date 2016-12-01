@@ -13,7 +13,7 @@ namespace FOReserva.Models
 
         public static void RegistrarLog(Exception exception) {
 
-            if (!EventLog.SourceExists(origen)) { 
+            if (!EventLog.Exists(origen)) { 
                 EventLog.CreateEventSource(origen, log);
 
                 EventLog.WriteEntry(origen, exception.StackTrace);

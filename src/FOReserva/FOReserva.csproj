@@ -45,6 +45,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -191,7 +193,39 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ORM\DB.cs" />
+    <Compile Include="Models\ORM\M20_ActualizarEstadoReservaHabitacion_Result.cs">
+      <DependentUpon>ModelDBReserva.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORM\M20_DetalleReservaHabitacion_Result.cs">
+      <DependentUpon>ModelDBReserva.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORM\M20_GuardarReservaHabitacion_Result.cs">
+      <DependentUpon>ModelDBReserva.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORM\M20_HistorialReservaHabitacion_Result.cs">
+      <DependentUpon>ModelDBReserva.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORM\ModelDBReserva.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDBReserva.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORM\ModelDBReserva.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDBReserva.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORM\ModelDBReserva.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDBReserva.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ReservaHabitacion\Cvista_ReservaHabitacion.cs" />
+    <Compile Include="Models\ReservaHabitacion\Errores\ReservaHabitacionException.cs" />
+    <Compile Include="Models\ReservaHabitacion\TMPHotel.cs" />
+    <Compile Include="Models\ReservaHabitacion\TMPUsuario.cs" />
+    <Compile Include="Models\Utilidad.cs" />
     <Compile Include="Models\Vuelos\Cvista_Vuelos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1557,10 +1591,27 @@
     <Content Include="Content\assets\plugins\slider.swiper\dist\js\maps\swiper.jquery.min.js.map" />
     <Content Include="Content\assets\plugins\slider.swiper\dist\js\maps\swiper.min.js.map" />
     <Content Include="Content\assets\plugins\styleswitcher\color_schemes\color_scheme.fla" />
+    <EntityDeploy Include="Models\ORM\ModelDBReserva.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelDBReserva.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ORM\ModelDBReserva.edmx.diagram">
+      <DependentUpon>ModelDBReserva.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Models\Autos\placeholder.html" />
     <Content Include="Models\Cruceros\placeholder.html" />
     <Content Include="Models\Hoteles\placeholder.html" />
+    <Content Include="Models\ORM\ModelDBReserva.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDBReserva.edmx</DependentUpon>
+      <LastGenOutput>ModelDBReserva.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ORM\ModelDBReserva.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDBReserva.edmx</DependentUpon>
+      <LastGenOutput>ModelDBReserva.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\Restaurantes\placeholder.html" />
     <Content Include="Models\Vuelos\placeholder.html" />
     <Content Include="Scripts\cargadorPestanas.js" />
@@ -2947,6 +2998,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

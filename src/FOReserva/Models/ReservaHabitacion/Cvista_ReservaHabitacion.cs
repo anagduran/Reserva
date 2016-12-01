@@ -7,10 +7,9 @@ using System.Diagnostics;
 
 namespace FOReserva.Models.ReservaHabitacion
 {
-
     using Usuario = TMPUsuario;
-    using Hotel = TMPHotel;
     using Errores;
+    using Hotel = TMPHotel;
 
     public class Cvista_ReservaHabitacion
     {
@@ -25,14 +24,14 @@ namespace FOReserva.Models.ReservaHabitacion
         private Nullable<System.DateTime> fechaPartida;
         private EstadoReserva estado;
 
-        public Hotel Hotel { get; }
-        public Usuario Usuario { get; }
-        public int Id { get; }
-        public int Habitacion { get; }
-        public System.DateTime FechaReservada { get; }
-        public int CantidadDias { get; }
-        public Nullable<System.DateTime> FechaPartida { get; }
-        public EstadoReserva Estado { get; }
+        public Hotel Hotel { get { return this.hotel; } }
+        public Usuario Usuario { get { return this.usuario; } }
+        public int Id { get { return this.id; } }
+        public int Habitacion { get { return this.habitacion; } }
+        public System.DateTime FechaReservada { get { return this.fechaReservada; } }
+        public int CantidadDias { get { return this.cantidadDias; } }
+        public Nullable<System.DateTime> FechaPartida { get { return this.fechaPartida; } }
+        public EstadoReserva Estado { get { return this.estado; } }
 
         public Cvista_ReservaHabitacion() : base()
         {
