@@ -40,114 +40,34 @@
                 alert(errorThrown);
             }
         });
-    console.log("test");
-
-
-
-
-
-    /* CARGADOR DE LA PESTAÑA VUELOS*/
-    $("#LiVuelos").click(function (e) {
-        e.preventDefault();
-        $("#LiVuelos").addClass("active");
-
-        $("#LiAutos").removeClass("active");
-        $("#LiHoteles").removeClass("active");
-        $("#LiRestaurantes").removeClass("active");
-        $("#LiCruceros").removeClass("active");
-        var url = '/gestion_vuelos/gestion_vuelos';
-        var method = 'GET';
-        var data = '';
-
-        $.ajax(
-            {
-                url: url,
-                type: method,
-                data: data,
-                success: function (data, textStatus, jqXHR) {
-
-                    $("#contenedor").empty();
-                    $("#contenedor").append(data);
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert(errorThrown);
-                }
-            });
-
-        var url = '/gestion_vuelos/gestion_vuelosImagenes';
-        var method = 'GET';
-        var data = '';
-
-        $.ajax(
-            {
-                url: url,
-                type: method,
-                data: data,
-                success: function (data, textStatus, jqXHR) {
-
-                    $("#contenedorImagenes").empty();
-                    $("#contenedorImagenes").append(data);
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert(errorThrown);
-                }
-            });
-
-    });
-
-
-    /* CARGADOR DE LA PESTAÑA AUTOS*/
-    $("#LiAutos").click(function (e) {
-        e.preventDefault();
-
-        $("#LiAutos").addClass("active");
-
-        $("#LiVuelos").removeClass("active");
-        $("#LiHoteles").removeClass("active");
-        $("#LiRestaurantes").removeClass("active");
-        $("#LiCruceros").removeClass("active");
-    });
-
-
-
-    /* CARGADOR DE LA PESTAÑA HOTELES*/
-    $("#LiHoteles").click(function (e) {
-        e.preventDefault();
-
-        $("#LiHoteles").addClass("active");
-
-        $("#LiVuelos").removeClass("active");
-        $("#LiAutos").removeClass("active");
-        $("#LiRestaurantes").removeClass("active");
-        $("#LiCruceros").removeClass("active");
-    });
-
-
-
-    /* CARGADOR DE LA PESTAÑA RESTAURANTES*/
-    $("#LiRestaurantes").click(function (e) {
-        e.preventDefault();
-
-        $("#LiRestaurantes").addClass("active");
-
-        $("#LiVuelos").removeClass("active");
-        $("#LiHoteles").removeClass("active");
-        $("#LiAutos").removeClass("active");
-        $("#LiCruceros").removeClass("active");
-    });
-
-
-
-
-    /* CARGADOR DE LA PESTAÑA CRUCEROS*/
-    $("#LiCruceros").click(function (e) {
-        e.preventDefault();
-
-        $("#LiCruceros").addClass("active");
-
-        $("#LiVuelos").removeClass("active");
-        $("#LiHoteles").removeClass("active");
-        $("#LiRestaurantes").removeClass("active");
-        $("#LiAutos").removeClass("active");
-    });
 });
+
+/* Cargador Generico */
+function cargarContenido(seccion, tipo, url, data) {
+
+    // 1T : 1 columna, Todo el ancho de la pagina
+    // 2D : 2 columnas, contenido derecha
+    // 2I : 2 columnas, contenido izquierda
+    $.ajax(
+        {
+            url: url,
+            type: tipo,
+            data: data,
+            success: function (data, textStatus, jqXHR) {
+                if (seccion == '#2D' || seccion == '#2I') {
+                    $("#1T").hide();
+                    $("#2C").show();
+                } else {
+                    $("#1T").show();
+                    $("#2C").hide();
+                }
+
+                $(seccion).empty();
+                $(seccion).append(data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(errorThrown);
+            }
+        });
+};
+console.log("Listo");

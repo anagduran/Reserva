@@ -11,10 +11,15 @@ namespace FOReserva.Models.ORM
 {
     using System;
     
-    public partial class M20_ActualizarEstadoReservaHabitacion_Result
+    public partial class M12_ConsultarUsuario_Result
     {
-        public Nullable<int> Estatus { get; set; }
-        public string Mensaje { get; set; }
-        public Nullable<int> Referencia { get; set; }
+        public string usu_nombre { get; set; }
+        public string usu_apellido { get; set; }
+        public string usu_correo { get; set; }
+        public string usu_contraseña { get; set; }
+        public Nullable<int> usu_fk_rol { get; set; }
+        public int usu_id { get; set; }
+        public System.DateTime usu_fechaCreacion { get; set; }
+        public string usu_activo { get; set; }
     }
 }

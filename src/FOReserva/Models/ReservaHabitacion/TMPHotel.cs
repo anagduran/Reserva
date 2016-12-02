@@ -8,5 +8,6 @@ namespace FOReserva.Models.ReservaHabitacion
     public class TMPHotel
     {
         public int Codigo { get; set; }
+        public string Nombre { get; set; }
     }
 }

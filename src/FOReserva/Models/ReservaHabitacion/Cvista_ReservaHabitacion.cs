@@ -15,23 +15,14 @@ namespace FOReserva.Models.ReservaHabitacion
     {
         public enum EstadoReserva { Ocupando, Activo, Expiro, Cancelo }
 
-        private Hotel hotel;
-        private Usuario usuario;
-        private int id;
-        private int habitacion;
-        private System.DateTime fechaReservada;
-        private int cantidadDias;
-        private Nullable<System.DateTime> fechaPartida;
-        private EstadoReserva estado;
-
-        public Hotel Hotel { get { return this.hotel; } }
-        public Usuario Usuario { get { return this.usuario; } }
-        public int Id { get { return this.id; } }
-        public int Habitacion { get { return this.habitacion; } }
-        public System.DateTime FechaReservada { get { return this.fechaReservada; } }
-        public int CantidadDias { get { return this.cantidadDias; } }
-        public Nullable<System.DateTime> FechaPartida { get { return this.fechaPartida; } }
-        public EstadoReserva Estado { get { return this.estado; } }
+        public Hotel Hotel { get; set; }
+        public Usuario Usuario { get; set; }
+        public int Id { get; set; }
+        public int Habitacion { get; set; }
+        public System.DateTime FechaLlegada { get; set; }
+        public int CantidadDias { get; set; }
+        public Nullable<System.DateTime> FechaPartida { get; set; }
+        public EstadoReserva Estado { get; set; }
 
         public Cvista_ReservaHabitacion() : base()
         {
@@ -39,26 +30,27 @@ namespace FOReserva.Models.ReservaHabitacion
         }
 
         public static List<Cvista_ReservaHabitacion> MisReservas(int usu_id) {
-
             try
             {
-                var registros = from data in DB.Singleton().M20_HistorialReservaHabitacion(id_usuario: usu_id)
+                var registros = from datos in DB.Singleton().M20_UsuarioHistorialReservaHabitacion(id_usuario: usu_id)
                                 select new Cvista_ReservaHabitacion
                                 {
-                                    hotel = new Hotel
+                                    Hotel = new Hotel
                                     {
-                                        Codigo = data.hot_id
+                                        Codigo = datos.hot_id,
+                                        Nombre = datos.hot_nombre
                                     },
-                                    usuario = new Usuario
+                                    Usuario = new Usuario
                                     {
-                                        Codigo = usu_id
+                                        Codigo = datos.usu_id,
+                                        Nombre = datos.fullname
                                     },
-                                    id = data.rha_id,
-                                    habitacion = data.rha_habitacion,
-                                    cantidadDias = data.rha_cantidad_dias,
-                                    fechaReservada = data.rha_fecha_reservada,
-                                    fechaPartida = data.rha_fecha_partida,
-                                    estado = (EstadoReserva)data.rha_estado
+                                    Id = datos.rha_id,
+                                    Habitacion = datos.rha_habitacion,
+                                    CantidadDias = datos.rha_cantidad_dias,
+                                    FechaLlegada = datos.rha_fecha_llegada,
+                                    FechaPartida = datos.rha_fecha_partida,
+                                    Estado = (EstadoReserva)datos.rha_estado
                                 };
 
                 return registros.ToList();
@@ -67,6 +59,39 @@ namespace FOReserva.Models.ReservaHabitacion
                 Utilidad.RegistrarLog(new ReservaHabitacionException("Ocurrio un problema al obtener mis reservas.", ex));
             }
             return null;
+        }
+
+        public void CargarDesdeDB()
+        {
+            try
+            {
+                if (this.Id < 1)
+                    throw new ReservaHabitacionException("Se requiere el Id de la reserva para cargar la informacion de la base de datos.");
+                var registro = from data in DB.Singleton().M20_DetalleReservaHabitacion(id_reserva: Id)
+                                select data;
+                var datos = registro.First();
+                if (datos != null) { 
+                    this.Hotel = new Hotel
+                    {
+                        Codigo = datos.hot_id,
+                        Nombre = datos.hot_nombre
+                    };
+                this.Usuario = new Usuario
+                {
+                    Codigo = datos.usu_id,
+                    Nombre = datos.fullname
+                };
+                this.Habitacion = datos.rha_habitacion;
+                this.CantidadDias = datos.rha_cantidad_dias;
+                this.FechaLlegada = datos.rha_fecha_llegada;
+                this.FechaPartida = datos.rha_fecha_partida;
+                this.Estado = (EstadoReserva)datos.rha_estado;
+                }
+            }
+            catch (Exception ex)
+            {
+                Utilidad.RegistrarLog(new ReservaHabitacionException(String.Format("Ocurrio un problema al obtener la reserva con id ({0}).", Id), ex));
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ namespace FOReserva.Models.ORM
 {
     using System;
     
-    public partial class M20_DetalleReservaHabitacion_Result
+    public partial class M20_HotelHistorialReservaHabitacion_Result
     {
         public int hot_id { get; set; }
         public string hot_nombre { get; set; }

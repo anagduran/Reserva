@@ -21,7 +21,8 @@ namespace FOReserva.Controllers
 
         [HttpGet]
         public ActionResult detalle_reserva(Cvista_ReservaHabitacion model)
-        {            
+        {
+            model.CargarDesdeDB();
             return PartialView(model);
         }
 
