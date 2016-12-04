@@ -114,7 +114,10 @@
 
     });
 
+
     $("#m03VisualizarRutas").click(function (e) {
+
+
         e.preventDefault();
         var url = '/gestion_ruta_comercial/VisualizarRutasComerciales';
         var method = 'GET';
@@ -126,7 +129,6 @@
                 type: method,
                 data: data,
                 success: function (data, textStatus, jqXHR) {
-
                     $("#contenido").empty();
                     $("#contenido").append(data);
                 },
@@ -134,8 +136,8 @@
                     alert(errorThrown);
                 }
             });
-    });
 
+    });
 
 });
 

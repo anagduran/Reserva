@@ -40,5 +40,6 @@ namespace BOReserva.Controllers
             return PartialView(ruta);
         }
 
-    }   
+    }
+
 }
