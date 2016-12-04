@@ -1,1 +1,2 @@
-G¸n5	µiŠ.®Õ†òÍ½÷òG·ÒœxWË|Ÿœ*™ĞÜìª›˜Štœ
+Color Picker
+https://bgrins.github.io/spectrum/

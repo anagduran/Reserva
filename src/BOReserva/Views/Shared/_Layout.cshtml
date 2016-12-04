@@ -6,6 +6,7 @@
        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
+       
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>RESERVA | BackOffice</title>
@@ -273,7 +274,7 @@
                         <ul class="treeview-menu">
                             <li><a href="modules/default/default.html"><i class="fa fa-plus-square-o"></i>Crear</a></li>
                         </ul>
-                    </li>
+                    </li>                    
                     <li id="gestionComida">
                         <a href="#">
                             <i class="fa fa-cutlery"></i> <span>Gestión de Comida</span> <span class="pull-right-container">
@@ -306,45 +307,34 @@
                             <li><a href="modules/gestion_cruceros/M24_GestionCruceros.html"><i class="fa fa-plus-square-o"></i>Gestionar</a></li>
                         </ul>
                     </li>
-                    <!-- MODULO DE AVIONES -->
-<<<<<<< HEAD
-                    <li id="gestionAviones"><a href="#"><i class="fa fa-plane"></i>Gestion De Aviones</a></li>                   
-                    <!-- FIN MODULO DE AVIONES -->
-                    <!-- MODULO DE RUTAS COMERCIALES-->
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-car"></i> <span>Gestión de rutas comerciales</span> <span class="pull-right-container">
-=======
-                    <li id="gestionAviones"><a href="#"><i class="fa fa-plane"></i>Gestión De Aviones</a></li>
-                   
-                    <!-- FIN MODULO DE AVIONES -->
 
-                    <!-- MODULO DE HOTELES -->
                     <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-circle"></i> <span>Gestión de Hoteles</span> <span class="pull-right-container">
->>>>>>> cb6653475b27a35524356aae489ae4bc9eaa5d60
+                        <a href="#)">
+                            <i class="fa fa-car"></i> <span>Gestión de rutas comerciales</span> <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-<<<<<<< HEAD
-                            <li id="m03AgregarRuta"><a href="#"><i class="fa fa-plus-square-o"></i>Crear</a></li>
-                            <li id="m03VisualizarRutas"><a href="#"><i class="fa fa-eye"></i>Visualizar</a></li>
+                            <li id="m03AgregarRuta"><a href="#"></i>Crear</a></li>
+                            <li id="m03VisualizarRutas"><a href="#">Visualizar</a></li>
                         </ul>
-                    </li>
-                    <!--FIN MODULO DE RUTAS COMERCIALES-->
-=======
-                            <li id="crearhotel"><a href="#"><i class="fa fa-plus-square-o"></i>Crear Hotel</a></li>
-                            <li id="modificarhotel"><a href="#"><i class="fa fa-plus-square-o"></i>Modificar Hotel</a></li>
-                            <li id="desactivarhotel"><a href="#"><i class="fa fa-plus-square-o"></i>Desactivar Hotel</a></li>
-                            
-                        </ul>
-                    </li>
-                  
-                    <!-- FIN MODULO DE BOLETOS AEREOS Y CHECK-IN -->
+                    </li>                    
 
->>>>>>> cb6653475b27a35524356aae489ae4bc9eaa5d60
+                    <!-- MODULO DE AVIONES -->
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-plane"></i> <span>Gestión de Aviones</span> <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li id="m02_agregaravion"><a href="#"> Agregar </a></li>
+                            <li id="m02_editaravion"><a href="#"> Editar </a></li>
+                            <li id="m02_consultaravion"><a href="#"> Consultar </a></li>
+                            <li id="m02_modificaravion"><a href="#"> Modificar </a></li>
+                        </ul>
+                    </li>
+                    <!-- FIN MODULO DE AVIONES -->
                     <!-- MODULO DE BOLETOS AEREOS Y CHECK-IN -->
                     <li class="treeview">
                         <a href="#">
@@ -363,10 +353,7 @@
 
                     <li><a href="modules/gestion_venta_boleto/checkin.html"><i class="fa fa-book"></i> <span>Check in</span></a></li>
                     <!-- FIN MODULO DE BOLETOS AEREOS Y CHECK-IN -->
-                    <!-- MODULO 12 : GESTION DE USUARIOS -->
-                    <li id="gestionUsuarios"><a href="#"><i class="fa fa-user"></i>Gestion De Usuarios</a></li>
 
-                    <!-- FIN MODULO 12 -->
 
 
 
@@ -590,12 +577,17 @@
                     </div>
                 </div>
             </footer>-->
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/menu")
     @Scripts.Render("~/bundles/js")
     @RenderSection("scripts", required: false)
 
     <script src="/Scripts/cargadorMenu.js"></script>
+
+    <!--SCRIPTS PARA GESTION DE AVIONES-->
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Scripts_Aviones/llamadas_generales.js")"></script>
+
     <!-- jQuery 2.2.3 -->
     <script src="/Content/plugins/jQuery/jquery-2.2.3.min.js"></script>
     <!-- Bootstrap 3.3.6 -->

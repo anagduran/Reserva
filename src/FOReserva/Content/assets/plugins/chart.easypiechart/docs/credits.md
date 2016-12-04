@@ -1,1 +1,1 @@
-V*1ƒ–®C3y†4ÝHcGóãÁ£Â¶7ú…r‘[MlF^®Ê”P]¥<Ç…:€´UUg¾ ú|¦ÌôBÏqô—o¥Ë×¾/Èhƒt¦1ÎÑ/~ýÀ5Î>ÌÏ…p#É~%D„nö1ñ ;oð<ÜqY¾zÙìl¬Ï¼T“Ÿ#Dà]±È4ÔPí‘$³öµØš¹
+Thanks to [Rafal Bromirski](http://www.paranoida.com/) for designing [this dribble shot](http://drbl.in/ezuc) which inspired me building this plugin.

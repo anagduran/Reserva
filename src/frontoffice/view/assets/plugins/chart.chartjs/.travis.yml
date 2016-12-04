@@ -1,2 +1,13 @@
-Tsxw«oÑilÛ7ŒX?_o=(E¨•qz­b/Ö¶¦ŸZî¡n(9*MbÌã²ÈíÎ‰éo‰C³¹
-CÏàe>Ç,ÛO>.¾½¥RË¨Èrİ€V¦¹©Ôå[kí“¶½³e‚úî'k›2‰ÊBÑƒÜ%ä­äiŸ…È¿\eKPé‡ö¸”è†Û\lRÉî‹ãp†¶nÿÄŒ­0ÁG ¾qg*UrïİX
+language: node_js
+node_js:
+  - "0.11"
+  - "0.10"
+
+before_script:
+  - npm install
+
+script:
+  - gulp test
+
+notifications:
+  slack: chartjs:pcfCZR6ugg5TEcaLtmIfQYuA

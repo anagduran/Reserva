@@ -1,1 +1,12 @@
-øô›Âeˆ¦È>UÙĞÅéÏ§Õ1Óoœ­[‹¶mwsĞq¯¿aY‚éƒ¨)ğÑ'VğNWRd·Ó\ş~;Âè-m>`ÔÅõíŒ¯ß÷¬$Íg¨Æ× Îêªpu²M	"¼0[n€’NÀoÂ$w¯šïcAÆıA`¬ouk¢ç34ÊH(ŞbËïÚG†È.\¸H<êÅe|÷’	w4	wëH"DÔÚ?à˜ìf–lä¼ìlN8oªŸ_„ÿC%»).ÔíÉ}‹‘ÅRª`şìô©’;`ÇÓGgm§¦ğ²êsÒ3i½W»‹V
+ï»¿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace BOReserva.Models.gestion_automoviles
+{
+    public class CAgregarAutomovil
+    {
+        public String _matricula { get; set; }
+    }
+}

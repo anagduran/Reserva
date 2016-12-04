@@ -1,4 +1,4 @@
-﻿@model BOReserva.Models.gestion_ruta_comercial.CGestion_ruta
+﻿﻿@model BOReserva.Models.gestion_ruta_comercial.CGestion_ruta
 
 
 
@@ -32,7 +32,7 @@
                 <a href="#"><i class="fa fa-eye" id="m03DetalleRutas"></i></a>
                 <a href="#"><i class="fa fa-gear" id="m03EditarRutas"></i></a>
             </td>
-        </tr>        
+        </tr>
     <tfoot>
         <tr>
             <th>Tipo</th>
@@ -48,7 +48,7 @@
 
 <script>
     $("#m03EditarRutas").click(function (e) {
-        e.preventDefault();        
+        e.preventDefault();
         alert("Botón Editar");
         $.ajax({
             url: '/gestion_ruta_comercial/ModificarRutasComerciales',
@@ -62,7 +62,7 @@
                 alert(errorThrown);
             }
         });
-    });  
+    });
 
 
     $("#m03DetalleRutas").click(function (e) {
@@ -83,3 +83,4 @@
     });
 
 </script>
+

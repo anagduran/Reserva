@@ -1,4 +1,7 @@
-ı;‹rA”0ßÄÃ
-X’µ(›üûm¦°[¹µMn`ùø–ùßr~±´gÏÙ›šìòù_ë#AO¶Â¸ü¬A¾§ûƒ^T	n1ì±õ°¨•Ù/¶æ[ˆ?=Øšéä¬#dæQú_¶’}?™¾Ş¨ròÓæšSŞ1-~o›?¢È]
-š³j`P1R¿ÍAÉˆsRÿ{€ÇŠW|é~¸@“½ïñ@ğçe+^gTè·¨wj6N¥hµ%.D{> ‡E²	_y¶-âQ•„ñÈŠ‹ñ5TÒÛ2ÑÓka‹ŞêEvúŠWÜµw¨z[ôşïV}åş/Eè&¨¾V”gNß%¯Œql,°Hü³ú¤Rğ{ømƒaîÇß+GaßÙK¯V+x	ïà½´M„vçVƒ\:hu>üíÂ—ìtÙÌÃ×Ì¢áÕ›lâç2Á¬uÊ“óæRà.&İõ0ÑÑ2^­›]¨Œ\EJË•!tu‘}/¹0M,:ÁĞxhÿ‘ÇŒ1‡àr>ÆUÜ¬ÌìÄoÚ‰ÅK3Th€´<p¯>ÁE7>6SJqeÎšM¦€Îåi"»–Ç|£| ºÁÙNò¡§Ô¹s‹ûQ%ã¨síe×T„½`ˆ@JÀ‹.ç“EŞ+£ãZäm¼¹{Õj}ñK`ºMÌ£f~OÀÈÉ°_'¢q¸Ä‡ÔCYê`Ü´å‰¡üR™$6	â¥=eL7ŒN*ã·İÓLäÁO[l=A#TŞÊq¬í“úÀ½÷Â
-‡…oá`nøğ]»ŠÀ”–+µ‹ÌTDLéÃ/Ôş´·Éa˜çQ¿ÒQ#ÃĞQ29ÄÀíCGgn—£ŸVR?µ1E»U«çYVz33KNI³*5öı#ëĞÖödf_§ù¾ó5NEÆ‚“ºÉ€2Ş¨d8‰½YCŸ1(ù‘<t¬èY)SU6YxŸîúpc/«}ˆŒ*]´œˆ~L6F"ĞFr'ş`'b€É·~€É4Ìë29Šè±5Oà°ê”™İ|sRUUXoÓ©#ÊB€GºÜ#WÍÙj$±9™şcßwBÂÕˆH‹æ”Î©’¨ê^½7~Š'C@›i}œUËrâ´AªÂ´İŞ›#>D‰¹èn˜0^¦DÚÆ 5Ìü &@Q+0SÈÇ‡™:¨æûş	½ƒ<d¿¾¨oJÇ±Ëv¿x•Ï‚e4)ò›¦ÏÂ„#í¨ƒ~8ŸBgdq'Æ¨»…õF~£¢›çµ¡{R½‘Ş¼›ãbƒË«Pu¢)[ÉŞyfº,Ew|-*vB+U3‹6§Uq\‚‘„¼ . –ÄF“Xoo(şTÜzYù,¦M!Ãz‰{Îñ‘ˆ˜é>®¤éC):ãá´Ü
+Copyright (c) 2013-2015 Nick Downie
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

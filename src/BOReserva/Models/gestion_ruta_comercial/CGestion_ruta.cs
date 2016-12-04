@@ -8,8 +8,8 @@ namespace BOReserva.Models.gestion_ruta_comercial
     public class CGestion_ruta
     {
         public int _idRuta { get; set; }
-        
-        public String _origenRuta { get ; set; }
+
+        public String _origenRuta { get; set; }
 
         public String _destinoRuta { get; set; }
 

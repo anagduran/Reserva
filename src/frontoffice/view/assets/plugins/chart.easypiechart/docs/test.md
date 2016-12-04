@@ -1,1 +1,1 @@
-Fœ±AQãlz½õ«“É£é€ø.Å7Ï6ô(…`¨ÛWâîg³',İ‡†D¹“X>ÔSsÂ0ì€›Ñh‚ş„ÿ=
+To run the test just use the karma adapter of grunt: `grunt test`

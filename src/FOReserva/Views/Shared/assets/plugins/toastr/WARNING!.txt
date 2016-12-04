@@ -1,1 +1,1 @@
-%9_H¾dÚ|Úr°•XZAõ™Á_åT(Bº}öã£ï6PX{ŞövÀÚ Ò'·?6ÊóuaüÆÍG1{Ñn·ŸH¸WÃè­•Ø•ñ?¨îe
+toastr.js has been modified - added .primary notification which is the theme color!

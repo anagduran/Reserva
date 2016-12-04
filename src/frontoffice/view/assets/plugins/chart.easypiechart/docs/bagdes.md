@@ -1,4 +1,4 @@
-GDªä
-*„¡´Xºä½±Ğ—v‹Ù¤î#)0^²™U¨	’Söf=c¦¾
-=•…èáúó—¸©¯”‘œ¼Á˜uI¢Ì½¥®şk¸h§Ò2ö
-¾ßğ)÷vØX—‚ër×³’á©4©z#Ÿ6?˜AŠD¬£ƒÏ)°N_¶.®ˆ&|7`İ`1›…z¹Ñ}œêè0Æl›d{TÓb×¨ÛÌø\¥Wf­_/º‡–áìxÅ‰'#V¼`Ş©T;Eº?Í,¬uüÍUV._ÈğGÜ²¬pK-uò†j÷ŠDèáïŠùF¿RÚ®ÀÄ”=Ÿ];­}©°İª¼Îu>Û"¶íH“jzao‚zuí&/×QÛg"»VrİÃ§·ş{Y½Ka¹CK)¹ƒ¢Ü¡ÛäĞ£*õ<&İÏ\ó¸UÅ™yó¸ö¶ Ùzvı<&Õóh^¬Ú©f9õÍ*Ñ4 ]‰ùŸ“Ç:İÊ|Há· ;Y¦Z–Ÿ)İ©ıµS6rƒo"$S´âüò%aSL!Ì—¾‡>Ìí«¼0‚M0!­ql¡€˜=\
+![Version](http://img.shields.io/version/{%= version %}.png?color=green)
+[![Build Status](https://travis-ci.org/rendro/easy-pie-chart.png)](https://travis-ci.org/rendro/easy-pie-chart)
+[![Dependencies Status](https://david-dm.org/rendro/easy-pie-chart/dev-status.png)](https://david-dm.org/rendro/easy-pie-chart)
+[![Analytics](https://ga-beacon.appspot.com/UA-46840672-1/easy-pie-chart/readme)](https://github.com/igrigorik/ga-beacon)

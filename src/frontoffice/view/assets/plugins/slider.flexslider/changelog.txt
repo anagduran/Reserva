@@ -1,1 +1,13 @@
-®óFŞŠˆ‘¢`­ %‰cuUsò„|wjÜúéè †ë[Æ£²ùQ«ú[$‘T¸´`vg,ºBáN1}ëSj€fÒĞ–?W-f˜Ì0¨D>€” KÑ”K˜~*üÿq|Œ+y&/zæÂ×ñïë´Uê ÂS-ç_ö¿=hi#ç,€¡Ø™±xÇ~«ÆækZ±H¤8Û™ÿ"£|†{g078õÖÕ2¿î±P`è(LpØ¹„Bœô‚:¸&qbôíÓí£–2ºß/8Å–1ÏsÙè\ªHïóÁœÅÃj4Ä:ó%’«+?ÔpàT_VK+Ã¨¤P«”šÒ	$Â…?1¢L½H!îô6640*©CŸçE¢!õIEêĞş,FÉO¤+2*&{¡jwp~îÁi³¤G/WÆ3"“K1#;@FHÂä8qA™@¶ôT”‚ã:V±ŠkÎŠcï»)4ÕæaÌ0qº
+FLEXSLIDER CHANGELOG
+
+2013.02.15 - Version 2.0
+ * Added changelog.txt
+
+2014.05.7 - Version 2.2.2
+ * Added flexslider.less
+
+2015.02.11 - Version 2.3.0
+ * Fix for pauseInvisible attribute for Chrome and the Page Visibility API
+
+ 2015.02.27 - Version 2.4.0
+ * Update for improved standards. Adds classes to li nav elements. Reset for li elements in stylesheet.

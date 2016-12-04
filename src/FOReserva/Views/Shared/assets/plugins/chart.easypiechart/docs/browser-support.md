@@ -1,4 +1,9 @@
-½'2úñn€jZ…íğÜHùMş:'ux* Árø\• ¿d­pû/F¢G@ä‚
-“0ªy*>Ñ$æ¶{ñææö·Ó@Iäê.ªŞô´“È¡‹ÄÙJ`6
-.ğ
-°v›PY!ÏÂ¼üL˜¤ŞÄñ®Ñ|òW¤)r0ˆËŞ‡÷§ĞzëïïÿRKøLúöŒ*:ÏÜzt¤ø€‹‹.ÎO.à—‡:ÕßeA5=c;OÛM´Ò•*—İª‰-7˜³‚Õ
+Native support
+
+* Chrome
+* Safari
+* FireFox
+* Opera
+* Internet Explorer 9+
+
+Support for Internet Explorer 7 and 8 with [excanvas](https://code.google.com/p/explorercanvas/wiki/Instructions) polyfill.

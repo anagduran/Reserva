@@ -1,2 +1,15 @@
-º¡Ö×œQ;QpYû)Írò/Ñs½Ib×da@ßÌ=pÌK4ú~—Ñ“³®]³j@Nš>ĞP&´=Ã^“¾˜Ô:JçÚ5vKœÚ@Ç¨uD_Ÿ¤>Á/pïf‹ÿµ‹tÕö(w¬¼İu0qä¹ÿª1‡‘e1€tt¸ş3î„Ù“ÛÕGÈ8¹œª6ò–f‚V÷Kp÷–”„iÔ=—AõT¹x%±@ÊËÌôŒy"ÉJı±é¥¡é ¸}ß'DyG=Zö*ò@Èö& îKPäjÙÛÊª”kãoÃÅª	"×% ñdÀ{ÈØ5.ËÁ¨âj}V—IcàNøÑttÈ é™è7vùQÍßÂ
-Ij*9œ„uºeCF"ê|1Äå Ğ¸şÖ.>Tƒ/F)k2!Ø¿„5ZÅÿ¦€ecüÕÙ|-Ûj‘±¦à#ìâ”jz»"®¬ğŸ>¾58,$¯{lD¼ê!îô0© ±¼4ÙÓGÂ9£Ûb Á¤€?v§rĞ‹Æd³\y:v`K›æLå%Û¦¹ÑHk“ü£GVù””ğ,!xãbuM;TµËCäV‘‘W,¢T„ë§òqE®(¨E#uUB©?vd…¸8™ÿV…^R¾ëŸÇqmäßRŒË%­éeVAc¯È¤íºı*~³€ÏJİĞØé~¸ë17ö€ıM–eí›Ë‡Ğô¶—‰
+ï»¿//------------------------------------------------------------------------------
+// <generado automÃ¡ticamente>
+//     Este cÃ³digo fue generado por una herramienta.
+//
+//     Los cambios en este archivo podrÃ­an causar un comportamiento incorrecto y se perderÃ¡n si
+//     se vuelve a generar el cÃ³digo. 
+// </generado automÃ¡ticamente>
+//------------------------------------------------------------------------------
+
+namespace frontoffice.view.RESFOM07 {
+    
+    
+    public partial class detalle_tipo_habitacion {
+    }
+}

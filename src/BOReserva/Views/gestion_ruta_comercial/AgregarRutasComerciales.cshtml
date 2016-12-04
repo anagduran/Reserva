@@ -3,8 +3,8 @@
 @{
     List<SelectListItem> listItems = new List<SelectListItem>();
     List<SelectListItem> listTipo = new List<SelectListItem>();
-    
-    
+
+
     listItems.Add(new SelectListItem
       {
           Text = "Caracas - Venezuela",
@@ -21,7 +21,7 @@
          Value = "Madrid"
      });
 
-    
+
     listTipo.Add(new SelectListItem
       {
           Text = "Aérea",
@@ -31,37 +31,38 @@
      {
          Text = "Marítima",
          Value = "maritima",
-         
+
      });
-     
+
 }
 
-@using (Html.BeginForm("guardarRuta", "gestion_ruta_comercial", null, FormMethod.Post, new { @id = "formGuardarRuta", @class = "form-horizontal" })) { 
-    
+@using (Html.BeginForm("guardarRuta", "gestion_ruta_comercial", null, FormMethod.Post, new { @id = "formGuardarRuta", @class = "form-horizontal" }))
+{
+
     <label>Elegir Tipo de la Ruta (*)</label>
-    @Html.DropDownList("rutaTipo", listTipo, new { @class = "form-control", @placeholder = "Aérea", @id = "rutaTipo" })    
+    @Html.DropDownList("rutaTipo", listTipo, new { @class = "form-control", @placeholder = "Aérea", @id = "rutaTipo" })
     <br />
     <label>Elegir Origen de la Ruta (*)</label>
-    @Html.DropDownList("rutaOrigen", listItems, new { @class = "form-control", @placeholder = "Ejem.: Caracas - Venezuela", @id = "rutaOrigen"})    
+    @Html.DropDownList("rutaOrigen", listItems, new { @class = "form-control", @placeholder = "Ejem.: Caracas - Venezuela", @id = "rutaOrigen" })
     <br />
     <label>Elegir Destino de la Ruta (*)</label>
-    @Html.DropDownList("rutaDestino", listItems, new { @class = "form-control", @placeholder = "Ejem.: Caracas - Venezuela", @id = "rutaDestino"})
+    @Html.DropDownList("rutaDestino", listItems, new { @class = "form-control", @placeholder = "Ejem.: Caracas - Venezuela", @id = "rutaDestino" })
     <br />
     <label>Agregar distancia de la Ruta (*)</label>
-    @Html.TextBoxFor(m => m._distanciaRuta, null , new { @class = "form-control", @placeholder = "1200 KM", @id = "rutaDistancia"})
-    <br />    
+    @Html.TextBoxFor(m => m._distanciaRuta, null, new { @class = "form-control", @placeholder = "1200 KM", @id = "rutaDistancia" })
+    <br />
     <center><button id="enviar" class="btn btn-success">Guardar</button></center>
-        
-    
-    
-    
+
+
+
+
     <script>
         $("#enviar").click(function (e) {
             e.preventDefault();
             var form = $("#formGuardarRuta");
             var origen = $('#rutaOrigen').get;
             var destino = $('#rutaDestino').val;
-            alert("Ruta origen: "+origen+" Ruta Destino: "+destino);
+            alert("Ruta origen: " + origen + " Ruta Destino: " + destino);
             $.ajax({
                 url: "gestion_ruta_comercial/guradarRuta",
                 data: form.serialize(),

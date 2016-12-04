@@ -1,1 +1,1 @@
-êç‘nœMèxcL›rËiŠN8¬ş€×íËmUÔ‰ÚÊ(İÖv>½ØëqÌ4nâª]ènPê0‚†Í9{q¸Ñİ{TZF~/ÆéÂ¼©Zğq]Õ˜Îíñ@q„u0°€X¥Ó‡Ğ•ƒ²Òç½^o‹öe'î¢gı’îw¸
+These maps are just extracted from the world map and re-sized to same level as the world map. No extra details, or polygons added.
